@@ -1,0 +1,141 @@
+:root {
+  --primary: #4f46e5;
+  --secondary: #0ea5e9;
+  --light: #f1f5f9;
+  --dark: #1e293b;
+  --gradient: linear-gradient(90deg, #6366f1, #3b82f6);
+  --text-light: #f8fafc;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--light);
+  margin: 0;
+  color: var(--dark);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+header {
+  background: var(--gradient);
+  color: var(--text-light);
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.projects h2,
+.skills h2,
+.contact h2 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.project-card {
+  background: #e0f2fe;
+  padding: 1rem;
+  border-left: 5px solid var(--secondary);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-badges span {
+  background-color: var(--secondary);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+#contactInfo {
+  margin-top: 1rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.styled-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #c7d2fe;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.styled-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
