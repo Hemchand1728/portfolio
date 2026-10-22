@@ -5,7 +5,6 @@ export const profile = {
   roles: ["Software Engineer", "Full-Stack Developer", "Java Developer"],
   location: "Tirupati, Andhra Pradesh, India",
   email: "hemc00153@gmail.com",
-  resume: "resume.pdf",
   photo: "hemachandu.webp",
   links: {
     github: "https://github.com/Hemchand1728",

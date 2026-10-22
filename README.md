@@ -17,7 +17,7 @@ npm run dev
 
 ## Edit content
 
-All text, links, projects and skills live in [`src/data.ts`](src/data.ts). Put your résumé at `public/resume.pdf` and your photo at `public/hemachandu.webp`.
+All text, links, projects and skills live in [`src/data.ts`](src/data.ts). Your photo lives at `public/hemachandu.webp`.
 
 ## Deploy
 

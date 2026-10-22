@@ -2,7 +2,7 @@ import { AnimatePresence, animate, motion, useInView, useScroll, useTransform } 
 import { Suspense, lazy, useEffect, useRef, useState } from "react";
 import { about, achievements, certification, experience, featured, profile, projects, skills, stats } from "../data";
 import type { Theme } from "../useTheme";
-import { ArrowDown, ArrowUpRight, Download, GitHub, LeetCode, LinkedIn, Mail, Seal } from "./Icons";
+import { ArrowDown, ArrowUpRight, GitHub, LeetCode, LinkedIn, Mail, Seal } from "./Icons";
 import { Magnetic, Reveal, SectionHeading, SplitText, TiltCard } from "./motion";
 
 const HeroScene = lazy(() => import("../three/HeroScene"));
@@ -108,11 +108,6 @@ export function Hero({ theme, ready }: { theme: Theme; ready: boolean }) {
                 <Magnetic>
                   <a href="#projects" className="btn btn-gold">
                     View my work <ArrowUpRight />
-                  </a>
-                </Magnetic>
-                <Magnetic>
-                  <a href={profile.resume} download className="btn btn-line">
-                    Résumé <Download />
                   </a>
                 </Magnetic>
               </motion.div>

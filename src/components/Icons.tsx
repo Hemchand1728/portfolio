@@ -9,9 +9,6 @@ export const ArrowUpRight = (p: P) => (
 export const ArrowDown = (p: P) => (
   <svg viewBox="0 0 24 24" width="16" height="16" {...stroke} {...p}><path d="M12 4v16M6 14l6 6 6-6" /></svg>
 );
-export const Download = (p: P) => (
-  <svg viewBox="0 0 24 24" width="16" height="16" {...stroke} {...p}><path d="M12 3v12M7 10l5 5 5-5M5 21h14" /></svg>
-);
 export const Sun = (p: P) => (
   <svg viewBox="0 0 24 24" width="17" height="17" {...stroke} {...p}><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></svg>
 );
