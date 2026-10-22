@@ -148,32 +148,6 @@ export function Hero({ theme, ready }: { theme: Theme; ready: boolean }) {
   );
 }
 
-/* ---------------- Marquee ---------------- */
-
-export function Marquee() {
-  const words = ["Java", "Spring Boot", "React", "Node.js", "Python", "REST APIs", "MongoDB", "MySQL", "Computer Vision", "NLP"];
-  const row = (
-    <div className="flex shrink-0 items-center">
-      {words.map((w) => (
-        <span key={w} className="flex items-center">
-          <span className="px-8 font-serif text-[clamp(2rem,5vw,3.6rem)] italic text-ink/80">{w}</span>
-          <span className="text-gold">✦</span>
-        </span>
-      ))}
-    </div>
-  );
-  return (
-    <div className="relative overflow-hidden border-y border-line py-7" aria-hidden>
-      <div className="marquee-track flex w-max">
-        {row}
-        {row}
-      </div>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-bg to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-bg to-transparent" />
-    </div>
-  );
-}
-
 /* ---------------- About ---------------- */
 
 function CountUp({ value }: { value: string }) {

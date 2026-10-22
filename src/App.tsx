@@ -2,7 +2,7 @@ import Lenis from "lenis";
 import { MotionConfig } from "motion/react";
 import { useEffect, useState } from "react";
 import { Cursor, Nav, Preloader, ScrollProgress } from "./components/Chrome";
-import { About, Contact, Credentials, Experience, Footer, Hero, Marquee, Projects, Skills } from "./components/Sections";
+import { About, Contact, Credentials, Experience, Footer, Hero, Projects, Skills } from "./components/Sections";
 import { useTheme } from "./useTheme";
 
 export default function App() {
@@ -26,7 +26,6 @@ export default function App() {
       <Nav theme={theme} toggleTheme={toggle} ready={ready} />
       <main>
         <Hero theme={theme} ready={ready} />
-        <Marquee />
         <About />
         <Skills />
         <Experience />
